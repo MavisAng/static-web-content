@@ -1,164 +1,389 @@
 <div id="TestBedInformation">
+
 <!--<div class="container" style="background-image: url('images/publication_back7.jpg'); object-fit: fill;object-position: 50% 50%;">-->
+
     <div class="container">
+
     <!--<p class="heading h15 text-center">Testbed Info</p>-->
 
+
+
+
     <p align="Center"><b><font size="30px" color="#0d6dba">Testbed Info</font></b></p>
+
     <div class="col-sm-4">
+
          &nbsp;
+
         <div class="row">
+
             <img src="images/datacenter_ pics.jpg" alt="" width="350"  height="360" border="0" align="right" />
+
         </div>
+
         &nbsp;
+
         <div class="row">
+
             <img src="images/datacenter_ pics3.jpg" alt="" width="350"  height="440" border="0" align="right" />
+
         </div>
+
         &nbsp;
+
         <div class="row">
+
             <img src="images/MOU_UTB_NCL.jpg" style="display: none" onload="loadImage('datacenterpic4.jpg','imgDC4','JPG')"/>
+
             <img id="imgDC4" alt="" width="350"  height="375" border="0" align="right"/>
+
         </div>
+
     </div>
+
     <div class="col-sm-8">
+
      <div class="row">
+
         <div class="panel panel-primary dashpanel">
+
             <h2 class="team-heading team-heading-current-team" th:text="#{Nodes.Specification}">Node Specification</h2>
-            <p> Each node has the following specifications:</p>
-            <p><i class="fa fa-check"></i> Two (2) Intel Xeon Processor E5-2620 V3 (2.40GHz/6-core) or V4 (2.1Ghz/8-core)</p>
-            <p><i class="fa fa-check"></i> One (1) 64GB 2133MHz DDR4 ECC memory</p>
-            <p><i class="fa fa-check"></i> One (1) 2TB 7.2K RPM Enterprise SATA 3.5” Hot-Plug Hard Drive</p>
-            <p><i class="fa fa-check"></i> One (1) 1Gb Ethernet RJ45 LAN port</p>
-            <p><i class="fa fa-check"></i> Two (2) 10Gb Ethernet ports (Intel X540)</p>
-            <p><i class="fa fa-check"></i> One (1) power supply unit</p>
+
+            <p> Below are an example of the specification of each node in different category:</p>
+
+            <p><dt class="fa fa-check">Platinum</dt> 
+		<dd>2x Intel Xeon Platinum 8480+ (each: 56-core / 2.00Ghz / 105MB L3 / 350W / DDR5)</dd>
+		<dd>1024 GB DDR5-4800 ECC RDIMM - 64GB x 16pcs</dd>
+		<dd>1x 960GB Enterprise SATA SSD, 2.5", powerloss protect., 1DWPD, 2M MTBF</dd>
+		<dd>1x 10GBASE-T Quad (4) port adapter</dd></p>
+
+	    <p><dt class="fa fa-check">Gold+</dt> 
+		<dd>2x Intel Xeon Gold 6338 Processor (32C, 64T, 48M, 2.00 GHz)</dd>
+		<dd>16x 64GB DDR4-3200 REG ECC DIMM</dd>
+		<dd>2x 480GB SATA Enterprise 2.5" SSD 2M MTBF 1 DWPD (RAID 1 for OS)</dd>
+		<dd>2x 16TB 7200RPM SATA 256MB Enterprise 3.5" HDD 2.5M MTBF (RAID 1 for Data);  1x PIKE II 3108 HW Raid Controller, 2Gb Cache</dd>
+		<dd>1x Dual-Port 10G Base-T Intel Based Mezzaine Card;  Onboard Dual GbE LAN and Dedicated management Port</dd></p>
+
+            <p><dt class="fa fa-check">Gold</dt> 
+		<dd>2x Intel Xeon Gold 5218R Processor (20C, 40T, 27.5M, 2.10 GHz)</dd>
+		<dd>16x 64GB DDR4-2933 REG ECC DIMM</dd>
+		<dd>2x 480GB SATA Enterprise 2.5" SSD 2M MTBF 1 DWPD (RAID 1 for OS)</dd>
+		<dd>2x 14TB 7200RPM SATA 256MB Enterprise 3.5" HDD 2.5M MTBF (RAID 1 for Data);  1x PIKE II 3108 HW Raid Controller, 2Gb Cache</dd>
+		<dd>1x Dual-Port 10G Base-T Intel Based Mezzaine Card; Onboard Dual GbE LAN and Dedicated management Port</dd></p>
+
+            <p><dt class="fa fa-check">Sliver</dt> 
+		<dd>2x Intel Xeon Silver 4210R Processor (10C, 20T, 13.75M, 2.40 GHz)</dd>
+		<dd>4x 32GB DDR4-2933 REG ECC DIMM</dd>
+		<dd>2x 480GB SATA Enterprise 2.5" SSD 2M MTBF 1 DWPD (RAID 1 for OS)</dd>
+		<dd>2x 2TB 7200RPM SATA Enterprise 3.5" HDD 2M MTBF</dd>
+		<dd>1x PIKE II 3108 HW Raid Controller, 2Gb Cache; 1x Dual-Port 10G Base-T Intel Based Mezzaine Card</dd></p>
+
+	    <p><dt class="fa fa-check">Bronze</dt> 
+		<dd>2x Intel Xeon Bronze 3206R Processor (8C, 8T, 11M, 1.90 GHz)</dd>
+		<dd>2x 32GB DDR4-2933 REG ECC DIMM</dd>
+		<dd>1x 480GB SATA Enterprise 2.5" SSD 2M MTBF 1 DWPD</dd>
+		<dd>1x Dual-Port 10G Base-T Intel Based Mezzaine Card</dd>
+		<dd>1x Dual-Port 1G Base-T Intel Based NIC Onboard Dual GbE LAN and Dedicated management Port</dd></p>
+
         </div> <!-- panel -->
+
     </div>
 
+
+
+
     <div class="row">
+
         <div class="panel panel-primary dashpanel">
+
             <h2 class="team-heading team-heading-current-team" th:text="#{GPU.Nodes.Specification}">GPU Node Specification</h2>
-            <p> Each GPU node has the following specifications:</p>
-            <p><i class="fa fa-check"></i> CPU: (2) Intel Xeon E5-2620v4 ** 8 cores / 2.10 GHz / 20MB L3 / 85W / 2133Mhz</p>
-            <p><i class="fa fa-check"></i> Memory: (256) GB DDR4-2400 ECC RDIMM - 32GB x 8pcs</p>
-            <p><i class="fa fa-check"></i> 1GbE NIC: (1) Dual port 1GBASE-T Network Adapter (4 ports, together with 2 LOM)</p>
-            <p><i class="fa fa-check"></i> 10GbE NIC: (1) Dual port 10GBASE-T Network Adapter</p>
-            <p><i class="fa fa-check"></i> SSD: (1) 480GB Enterprise SATA SSD (Samsung PM863a), high endurance, 2M MTBF</p>
-            <p><i class="fa fa-check"></i> HDD: (1) 8TB Enterprise SATA HDD, 7.2k RPM 256MB cache, 2.5M MTBF</p>
-            <p><i class="fa fa-check"></i> OS: (1) Ubuntu 16.04 LTS, CUDA toolkit, cuDNN installation</p>
-            <p><i class="fa fa-check"></i> GPU: (2) NVIDIA Tesla V100 16GB HBM2 / Tesla P100 12GB HBM2</p>
+
+	    <p> NCL currently owns three type of GPU: </p>
+		<details>
+			<summary>NVIDIA A100 Tensor Core</summary> 
+				Delivers unprecedented acceleration at every scale to power the world’s highest-performing elastic data centers for AI, data analytics, and HPC.
+				<p><i class="fa fa-check"></i> FP64: 9.7 teraFLOPS </p>
+            			<p><i class="fa fa-check"></i> FP64 Tensor Core: 19.5 teraFLOPS</p>
+          			<p><i class="fa fa-check"></i> FP32: 19.5 teraFLOPS </p>
+            			<p><i class="fa fa-check"></i> Tensor Float 32 (TF32): 156 teraFLOPS | 312 teraFLOPS* </p>
+            			<p><i class="fa fa-check"></i> BFLOAT16 Tensor Core: 312 teraFLOPS | 624 teraFLOPS*</p>
+            			<p><i class="fa fa-check"></i> FP16 Tensor Core: 312 teraFLOPS | 624 teraFLOPS*</p>
+            			<p><i class="fa fa-check"></i> INT8 Tensor Core: 624 TOPS | 1248 TOPS* </p>
+				<p><i class="fa fa-check"></i> GPU Memory: 80GB HBM2e </p>
+            			<p><i class="fa fa-check"></i> GPU Memory Bandwidth: 1,935 GB/s </p>
+          			<p><i class="fa fa-check"></i> Max Thermal Design Power (TDP): 300W </p>
+            			<p><i class="fa fa-check"></i> Multi-Instance GPU: Up to 7 MIGs @ 10GB </p>
+            			<p><i class="fa fa-check"></i> Form Factor: PCIe | Dual-slot air-cooled or single-slot liquid-cooled </p>
+            			<p><i class="fa fa-check"></i> Interconnect: NVIDIA’ NVLink’ Bridge for 2 GPUs: 600 GB/s ** | PCIe Gen4: 64 GB/s </p>
+            			<p><i class="fa fa-check"></i> Server Options: Partner & NVIDIA-Certified Systems with 1-8 GPUs </p>
+	    	</details>
+		<details>
+			<summary>NVIDIA Tesla V100</summary>
+				Most advanced data center GPU ever built to accelerate AI, high performance computing (HPC), data science and 	graphics. It’s powered by NVIDIA Volta architecture, comes in 16 and 32GB configurations, and offers the performance of up to 100 CPUs in a single GPU. Data scientists, researchers, and engineers can now spend less time optimising memory usage and more time designing the next AI breakthrough.
+				<p><i class="fa fa-check"></i> GPU Architecture: NVIDIA Volta </p>
+            			<p><i class="fa fa-check"></i> NVIDIA Tensor Cores: 640 </p>
+          			<p><i class="fa fa-check"></i> NVIDIA CUDA Cores: 5120 </p>
+            			<p><i class="fa fa-check"></i> Double-Precision Performance: 7.8 teraFLOPS </p>
+            			<p><i class="fa fa-check"></i> Single-Precision Performance: 15.7 teraFLOPS </p>
+				<p><i class="fa fa-check"></i> Tensor Performance: 125 teraFLOPS </p>
+            			<p><i class="fa fa-check"></i> Interconnect: Bi-directional 32 GB/s </p>
+				<p><i class="fa fa-check"></i> GPU Memory: 16GB HBM2 </p>
+            			<p><i class="fa fa-check"></i> GPU Memory Bandwidth: 900 GB/s </p>
+          			<p><i class="fa fa-check"></i> Max Thermal Design Power (TDP): 300W </p>
+            			<p><i class="fa fa-check"></i> System Interface: NVIDIA NVLink </p>
+	    	</details>
+		<details>
+			<summary>NVIDIA Tesla P100 12GB</summary>
+				The World’s First AI Supercomputing Data Center GPU
+Today's data centers rely on many interconnected commodity compute nodes, which limits high performance computing (HPC) and hyperscale workloads. NVIDIA® Tesla® P100 taps into NVIDIA Pascal™ GPU architecture to deliver a unified platform for accelerating both HPC and AI, dramatically increasing throughput while also reducing costs.
+				<p><i class="fa fa-check"></i> GPU Architecture: NVIDIA Pascal </p>
+          			<p><i class="fa fa-check"></i> NVIDIA CUDA Cores: 3584 </p>
+            			<p><i class="fa fa-check"></i> Double-Precision Performance: 4.7 teraFLOPS </p>
+            			<p><i class="fa fa-check"></i> Single-Precision Performance: 9.3 teraFLOPS </p>
+				<p><i class="fa fa-check"></i> Half-Precision Performance: 18.7 teraFLOPS </p>
+            			<p><i class="fa fa-check"></i> Interconnect: 32 GB/s </p>
+				<p><i class="fa fa-check"></i> GPU Memory: 12GB HBM2 </p>
+            			<p><i class="fa fa-check"></i> GPU Memory Bandwidth: 549 GB/s </p>
+          			<p><i class="fa fa-check"></i> Max Thermal Design Power (TDP): 250W </p>
+            			<p><i class="fa fa-check"></i> System Interface: PCIe Gen3 </p>
+	    	</details>
         </div> <!-- panel -->
+
     </div>
 
+
+
+
     <div class="row">
+
         <div class="panel panel-primary dashpanel">
+
             <h2 class="team-heading team-heading-current-team" th:text="#{GPU.Nodes.Specification}">SGX server node Specification</h2>
+
             <p> Each node has the following specifications:</p>
+
             <p><i class="fa fa-check"></i> CPU: 6-core Intel Xeon E-2356G 3.2GHZ/12M Cache/3200 MT/s</p>
+
             <p><i class="fa fa-check"></i> SGX: Firmware Version</p>
+
             <p><i class="fa fa-check"></i> TPM: Trusted Platform Module 2.0 V3</p>
+
             <p><i class="fa fa-check"></i> RAM: 16GB UDIMM, 3200MT/s, ECC</p>
+
             <p><i class="fa fa-check"></i> SSD: 480GB SATA Mix Use 6Gbps</p>
+
             <p><i class="fa fa-check"></i> LAN: Dual Port 1GB Ethernet</p>
+
             </div> <!-- panel -->
+
     </div>
+
 </div>
+
+
+
 
 </div> <!-- container -->
 
+
+
+
 <div class="container">
 
+
+
+
     <div class="row">
+
         <p>&nbsp;</p>
+
         <div class="panel panel-primary dashpanel">
+
             <h2 class="team-heading team-heading-current-team" th:text="#{image.openstack.system}">Openstack Provisioning System</h2>
+
             <p align="justify">OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms. NCL uses openstack APIs and provide interface to launch server instances, create experiments and perform available actions.</p>
+
             <p><strong>List of Flavours supported by NCL:</strong></p>
+
             <div class="table-responsive">
+
                 <table class="table1">
+
                     <thead BGCOLOR="#E0E0E0">
+
                     <th width="35%"><p><h4><strong th:text="#{image.flavour}">Name</strong></h4></p></th>
+
                     <th width="25%"><p><h4><strong th:text="#{image.ram}">RAM (MB)</strong></h4></p></th>
+
                     <th width="20%"><p><h4><strong th:text="#{image.disk}">Disk (GB)</strong></h4></p></th>
+
                     <th width="20%"><p><h4><strong th:text="#{image.vcpu}">VCPUs</strong></h4></p></th>
+
                     </thead>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">m1.small</div></td>
+
                         <td><div align="center">2048</div></td>
+
                         <td><div align="center">40</div></td>
+
                         <td><div align="center">1</div></td>
+
                       <!--  <td><div align="center">Ubuntu-18.04...Ubuntu-20.04...Kali-Linux-2020...Fedora-35</div></td>-->
+
                     </tr>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">m1.medium</div></td>
+
                         <td><div align="center">4096</div></td>
+
                         <td><div align="center">60</div></td>
+
                         <td><div align="center">2</div></td>
+
                     </tr>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">m1.large</div></td>
+
                         <td><div align="center">8192</div></td>
+
                         <td><div align="center">80</div></td>
+
                         <td><div align="center">4</div></td>
+
                     </tr>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">m1.xlarge</div></td>
+
                         <td><div align="center">16384</div></td>
+
                         <td><div align="center">120</div></td>
+
                         <td><div align="center">8</div></td>
+
                     </tr>
+
                 </table>
+
                 <p> </p>
+
                 <p>List of Operating Systems supported by NCL</p>
 
+
+
+
                 <table class="table1">
+
                     <thead BGCOLOR="#E0E0E0">
+
                     <th width="30%"><p><h4><strong th:text="#{image.OS}">OS</strong></h4></p></th>
+
                     <th width="70%"><p><h4><strong th:text="#{image.description}">Description</strong></h4></p></th>
+
                     </thead>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">Ubuntu-1804-vmdk</div></td>
+
                         <td><div align="center">Ubuntu Server 18.04 LTS (Bionic Beaver) released builds</div></td>
+
                     </tr>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">Ubuntu-2004-vmdk</div></td>
+
                         <td><div align="center">Ubuntu Server 20.04 LTS (Focal Fossa) released builds</div></td>
+
                     </tr>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">Kali-vmdk</div></td>
+
                         <td><div align="center">The latest open-source, Debian-based Linux distribution aimed at advanced Penetration Testing and Security Auditing.</div></td>
+
                     </tr>
+
                     <tr BGCOLOR="#fff">
+
                         <td><div align="center">Fedora35_Cloud_qcow2</div></td>
+
                         <td><div align="center">Fedora 35 Cloud Base Images</div></td>
+
                     </tr>
+
                 </table>
+
             </div>
+
             <a href="https://www.openstack.org/software/" ><h18>Learn More >>> </h18></a>
+
         </div> <!-- panel -->
+
     </div>
 
+
+
+
  <div class="row">
+
         <p></p>
+
         <div class="panel panel-primary dashpanel">
+
             <h2 class="team-heading team-heading-current-team" th:text="#{image.deterlab.system}">NCL SGX Attestation Services</h2>
+
             <p></p>
+
             <p align="justify">We already know well how to protect sensitive data in storage and transit via encryption. However, the encrypted data often times needs to be decrypted when being computed in memory, which puts the protected data at the risk of being exposed. Confidential Computing (CC), such as Intel SGX, is one widely available to rescue, which is an up-and-coming security technology for protecting data in use.</p>
+
             <p align="justify"> NCL provides Intel NCL SGX Attestation services to support this exciting technology. Although some public cloud providers like Microsoft Azure offers Intel SGX-enabled machines with Data Center Attestation Primitives (DCAP) based attestation service. But, NCL provides SGX-enabled machines with affordable pricing, and also with DCAP-based attestation service which provides faster remote attestation for NCL SGX machines than using Intel's Attestation Service for SGX (IAS). NCL customer/users can also use this DCAP-based attestation service independently for remote attestation of SGX machines outside NCL for free.</p>  
+
             
+
         </div> <!-- panel -->
+
     </div>
+
+
+
+
+
 
 
     <div class="row">
+
         <p></p>
+
         <div class="panel panel-primary dashpanel">
+
             <h2 class="team-heading team-heading-current-team" th:text="#{image.deterlab.system}">DeterLab Provisioning System</h2>
+
             <p></p>
+
             <p align="justify">DeterLab is a state-of-the-art scientific computing facility for cyber-security researchers engaged in research, development, discovery, experimentation, and testing of innovative cyber-security technology. To date, DeterLab-based projects have included behavior analysis and defensive technologies including DDoS attacks, worm and botnet attacks, encryption, pattern detection, and intrusion-tolerant storage protocols.</p> 
+
             <p align="justify">The NCL web application is a customized, enhanced version of DeterLab, with additional features like a ready-to-use vulnerability environment, data repository, accounting, etc.</p>
+
             <a target="_blank" href="https://deter-project.org/about_deterlab" ><h18>Learn More >>> </h18></a>
+
         </div> <!-- panel -->
+
     </div>
 
-</div> <!--Container 2 closes-->
-</div>
 
+
+
+</div> <!--Container 2 closes-->
+
+</div>
